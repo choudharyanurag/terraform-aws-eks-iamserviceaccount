@@ -1,0 +1,16 @@
+# .terraform directories
+**/.terraform/*
+
+*.tfvars
+
+# .tfstates
+*.tfstate
+*.tfstate.*
+
+
+# lockfile
+.terraform.lock.hcl
+
+
+.terraformrc
+terraform.rc
