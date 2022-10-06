@@ -10,7 +10,7 @@ resource "aws_iam_policy" "policy_service_account" {
     policy = file(var.policy_files[count.index])
 }
 
-resource "aws_iam_policy" "role_service_account" {
+resource "aws_iam_role" "role_service_account" {
     name = var.iam_role_name
     assume_role_policy = <<POLICY
     {
